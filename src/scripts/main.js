@@ -1,3 +1,5 @@
+AOS.init();
+
 const dataDoEvento = new Date("May 25, 2025 10:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
@@ -25,6 +27,6 @@ const contaAsHoras = setInterval(function() {
     
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento Expirado';
+        document.getElementById('contador').innerHTML = 'Seu aniversário já começou';
     }
 }, 1000);
